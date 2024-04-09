@@ -1,0 +1,5 @@
+Amazon CloudWatch is a native AWS monitoring tool for AWS programs. 
+It provides data collection and resource monitoring capabilities. 
+Grafana is a data visualization tool developed by Grafana Labs in New York. 
+It is available open source, managed (Grafana Cloud), or via an enterprise edition with enhanced features.
+

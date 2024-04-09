@@ -1,0 +1,38 @@
+scp -rp Jboot fat3bsl@nl0416yr:/var/SP/users/fat3bsl/scripts      (copy the file/Directories b/w  servers,  scp-secure copy  )
+sed -i 's/old-text/new-text/g' input.txt   ( to replace text in all occurence, sed- stream editor, s-substitude,g-global)
+sed '200i\Infra' fusion.txt   (insert the string “Infra” on line 200 of the file fusion.txt)
+sed '3i\Infra' dvci.txt | sed -n '1,5 p'  (insert string “Infra” on the 3rd line and print the 1st to 5th line of the modified file. Option ‘p’ in second sed is used to only print) 
+cat empty_file.sh | mailx -s " Empty_file " vinayth@amdocs.com 
+:s/search/replace/g  in vi editor
+https://www.geeksforgeeks.org/tar-command-linux-examples/  (tar )
+
+
+
+The genrsa command is used to generate an RSA private key file.
+
+The most basic form of the genrsa command specifies the name of the output file containing the key and specifies AES256 encryption (required).
+
+$ openssl genrsa -out key-filename.pem -aes256
+
+The –pass option adds password protection to the certificate. If specified, tape library users will be required to enter this password to log in to the GUI.
+
+$ openssl genrsa -out key-filename.pem -aes256 -passout pass:Passw0rd1
+
+If you do not specify a size for the private key, the genrsa command uses the default value of 512 bits. To specify a different key size, enter the value as shown in the following example (2048). The key size must be the last option in the command.
+
+$ openssl genrsa -out key-filename.pem -aes256 -passout pass:Passw0rd1 2048
+
+
+                                    
+                                                   						   
+                                                  
+
+        Standard Error Redirection
+To redirect the error output of a command do: command 2> file
+
+To discard the error alltogether do: command 2>/dev/null
+
+To put the error to the same location as the normal output do: command 2>&1
+
+
+
